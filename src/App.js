@@ -1,19 +1,36 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 import Dashboard from "./pages/Dashboard";
 import RaiseQuery from "./pages/RaiseQuery";
 import Tracking from "./pages/Tracking";
 import QueryDetail from "./pages/QueryDetail";
-import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/raise" element={<RaiseQuery />} />
-        <Route path="/tracking" element={<Tracking />} />
-        <Route path="/detail" element={<QueryDetail />} />
-      </Routes>
+      <div className="app">
+
+        {/* Sidebar */}
+        <div className="sidebar">
+          <h2>Supplier Portal</h2>
+
+          <Link to="/">Dashboard</Link>
+          <Link to="/raise">Raise Query</Link>
+          <Link to="/tracking">Query Tracking</Link>
+        </div>
+
+        {/* Main Content */}
+        <div className="main">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/raise" element={<RaiseQuery />} />
+            <Route path="/tracking" element={<Tracking />} />
+            <Route path="/detail" element={<QueryDetail />} />
+          </Routes>
+        </div>
+
+      </div>
     </BrowserRouter>
   );
 }

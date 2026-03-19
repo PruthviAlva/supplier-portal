@@ -1,14 +1,8 @@
-import { Link } from "react-router-dom";
-
 export default function Tracking() {
   return (
-    <div className="container">
-      <h1>Query Tracking</h1>
-
-      <div className="flex">
-        <button>Pending</button>
-        <button>In Review</button>
-        <button>Resolved</button>
+    <div>
+      <div className="topbar">
+        <h1>Query Tracking</h1>
       </div>
 
       <div className="card">
@@ -22,16 +16,18 @@ export default function Tracking() {
           </thead>
           <tbody>
             <tr>
-              <td>HACCP Cert</td>
+              <td>HACCP Certificate</td>
               <td>ABC Foods</td>
               <td><span className="badge yellow">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Allergen Info</td>
+              <td>XYZ Pvt Ltd</td>
+              <td><span className="badge green">Resolved</span></td>
             </tr>
           </tbody>
         </table>
       </div>
-
-      <br />
-      <Link to="/detail"><button>View Detail</button></Link>
     </div>
   );
 }

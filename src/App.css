@@ -1,37 +1,118 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
-  background: #f5f7fb;
+  background: #f3f4f6;
+  color: #111827;
 }
 
-.container {
-  padding: 20px;
-}
-
-.card {
-  background: white;
-  padding: 16px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.flex {
+/* Layout */
+.app {
   display: flex;
-  gap: 16px;
 }
 
-.space-between {
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #111827;
+  color: white;
+  height: 100vh;
+  padding: 24px 16px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background: #1f2937;
+  color: white;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 24px;
+}
+
+/* Topbar */
+.topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
 }
 
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 13px;
+  color: #6b7280;
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 14px 0;
+}
+
+tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Badges */
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.red { background: #fee2e2; color: #b91c1c; }
+.green { background: #dcfce7; color: #166534; }
+.yellow { background: #fef9c3; color: #854d0e; }
+
+/* Buttons */
 button {
-  padding: 8px 16px;
+  padding: 10px 16px;
+  border-radius: 8px;
   border: none;
-  border-radius: 6px;
   background: #4f46e5;
   color: white;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -39,47 +120,22 @@ button:hover {
   background: #4338ca;
 }
 
+/* Inputs */
 input, select, textarea {
+  width: 100%;
   padding: 10px;
-  width: 100%;
   margin-top: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 16px;
+/* Form spacing */
+label {
+  font-size: 13px;
+  font-weight: 500;
 }
 
-th {
-  background: #eef2ff;
-  text-align: left;
-}
-
-td, th {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-}
-
-.badge {
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 12px;
-}
-
-.red {
-  background: #fee2e2;
-  color: #b91c1c;
-}
-
-.green {
-  background: #dcfce7;
-  color: #166534;
-}
-
-.yellow {
-  background: #fef9c3;
-  color: #854d0e;
+.form-group {
+  margin-bottom: 16px;
 }

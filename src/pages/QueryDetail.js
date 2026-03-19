@@ -1,21 +1,18 @@
 export default function QueryDetail() {
   return (
-    <div className="container">
-      <div className="card">
-        <h2>Query Detail</h2>
+    <div className="card">
+      <h2>HACCP Certificate Query</h2>
 
-        <div style={{ marginBottom: "10px" }}>
-          <b>QA:</b> Please upload certificate
-        </div>
-
-        <div style={{ marginBottom: "10px" }}>
-          <b>Supplier:</b> Uploading today
-        </div>
-
-        <input placeholder="Type message..." />
-        <br /><br />
-        <button>Send</button>
+      <div style={{ marginTop: "16px" }}>
+        <p><b>QA:</b> Please upload latest certificate.</p>
+        <p><b>Supplier:</b> Uploading by today.</p>
       </div>
+
+      <div className="form-group">
+        <input placeholder="Write a reply..." />
+      </div>
+
+      <button>Send</button>
     </div>
   );
 }
