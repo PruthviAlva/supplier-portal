@@ -1,28 +1,28 @@
 export default function RaiseQuery() {
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Raise Query</h1>
+    <div className="container">
+      <div className="card">
+        <h2>Raise New Query</h2>
 
-      <select>
-        <option>Select Supplier</option>
-        <option>ABC Foods</option>
-      </select>
+        <label>Supplier</label>
+        <select>
+          <option>Select Supplier</option>
+          <option>ABC Foods</option>
+        </select>
 
-      <br /><br />
+        <label>Query Type</label>
+        <select>
+          <option>Select Type</option>
+          <option>Allergen Info</option>
+          <option>HACCP Certificate</option>
+        </select>
 
-      <select>
-        <option>Query Type</option>
-        <option>Allergen Info</option>
-        <option>HACCP Certificate</option>
-      </select>
+        <label>Message</label>
+        <textarea placeholder="Enter your message" />
 
-      <br /><br />
-
-      <textarea placeholder="Enter message" />
-
-      <br /><br />
-
-      <button>Submit</button>
+        <br /><br />
+        <button>Submit Query</button>
+      </div>
     </div>
   );
 }

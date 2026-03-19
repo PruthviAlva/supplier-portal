@@ -3,6 +3,7 @@ import Dashboard from "./pages/Dashboard";
 import RaiseQuery from "./pages/RaiseQuery";
 import Tracking from "./pages/Tracking";
 import QueryDetail from "./pages/QueryDetail";
+import "./App.css";
 
 function App() {
   return (

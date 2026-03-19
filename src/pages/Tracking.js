@@ -2,31 +2,36 @@ import { Link } from "react-router-dom";
 
 export default function Tracking() {
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="container">
       <h1>Query Tracking</h1>
 
-      <button>Pending</button>
-      <button>In Review</button>
-      <button>Resolved</button>
+      <div className="flex">
+        <button>Pending</button>
+        <button>In Review</button>
+        <button>Resolved</button>
+      </div>
 
-      <table border="1" cellPadding="10">
-        <thead>
-          <tr>
-            <th>Query</th>
-            <th>Supplier</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HACCP Cert</td>
-            <td>ABC Foods</td>
-            <td>Pending</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Query</th>
+              <th>Supplier</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HACCP Cert</td>
+              <td>ABC Foods</td>
+              <td><span className="badge yellow">Pending</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <Link to="/detail">View Detail</Link>
+      <br />
+      <Link to="/detail"><button>View Detail</button></Link>
     </div>
   );
 }

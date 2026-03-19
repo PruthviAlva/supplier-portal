@@ -1,13 +1,21 @@
 export default function QueryDetail() {
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Query Detail</h1>
+    <div className="container">
+      <div className="card">
+        <h2>Query Detail</h2>
 
-      <p><b>QA:</b> Please upload certificate</p>
-      <p><b>Supplier:</b> Uploading today</p>
+        <div style={{ marginBottom: "10px" }}>
+          <b>QA:</b> Please upload certificate
+        </div>
 
-      <input placeholder="Type message..." />
-      <button>Send</button>
+        <div style={{ marginBottom: "10px" }}>
+          <b>Supplier:</b> Uploading today
+        </div>
+
+        <input placeholder="Type message..." />
+        <br /><br />
+        <button>Send</button>
+      </div>
     </div>
   );
 }
