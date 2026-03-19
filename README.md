@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# 🧾 Supplier Query Management Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern UI-based web application designed to streamline supplier food safety queries for QA teams. This project centralizes supplier data, query tracking, and communication into a single, intuitive dashboard.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
+🔗 Deployment Link: https://supplier-portal-rho.vercel.app/
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 GitHub Repository
+🔗 Repo Link: https://github.com/PruthviAlva/supplier-portal.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🎯 Objective
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Food safety teams often struggle with fragmented systems (emails, spreadsheets, calls) to manage supplier compliance and queries.
 
-### `npm run build`
+This application solves that by providing:
+- A centralized dashboard
+- Query submission and tracking
+- Supplier compliance visibility
+- Easy communication interface
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🟢 Supplier Dashboard
+- Overview of all suppliers
+- Risk indicators (High / Low)
+- Certificate status
+- Pending query count
 
-### `npm run eject`
+### 🟡 Raise New Query
+- Select supplier and query type
+- Predefined query categories (Allergen, HACCP, etc.)
+- Input message and submit query
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🔵 Query Tracking
+- View all queries in one place
+- Status indicators:
+  - Pending
+  - In Review
+  - Resolved
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🟣 Query Detail Page
+- Chat-style communication interface
+- View query history
+- Send replies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧭 User Flow
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dashboard → Select Supplier → Raise Query → Track Query → View Details → Resolve
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Tech Stack
 
-### Analyzing the Bundle Size
+- **Frontend:** React.js
+- **Routing:** React Router DOM
+- **Styling:** CSS (Custom, no external UI library)
+- **Deployment:** Vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🎨 UI/UX Design Decisions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Sidebar Layout:** Enables easy navigation across modules
+- **Card-Based Design:** Highlights key metrics (suppliers, risks, queries)
+- **Table Structure:** Organizes supplier and query data clearly
+- **Status Badges:** Color-coded for quick understanding
+- **Minimal Design:** Focus on clarity and usability over complexity
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ⚡ How It Reduces User Friction
 
-### Deployment
+- Centralized data → No need to switch between tools
+- Quick query submission → Saves time
+- Visual status indicators → Easy tracking
+- Clean layout → Improves readability and focus
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## ♿ Accessibility Considerations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- High contrast colors for readability
+- Clear labels and structured layout
+- Consistent spacing and font sizes
+- Buttons and inputs are easy to interact with
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/supplier-portal.git
+cd supplier-portal
+
+Install dependencies:
+
+npm install
+
+Run the app:
+
+npm start
+🚀 Deployment
+
+This project is deployed using Vercel:
+
+
+📌 Future Improvements
+
+Backend integration (Node.js / Express)
+
+Real-time chat with suppliers
+
+File upload for certificates
+
+Advanced filters and search
+
+Notifications for expiring certificates
+
+🙌 Conclusion
+
+This project demonstrates a clean and scalable UI solution for managing supplier food safety queries. It focuses on usability, clarity, and reducing operational friction for QA teams.
+
+
+---
+
+   - ![alt text](image.png)
+
+---
